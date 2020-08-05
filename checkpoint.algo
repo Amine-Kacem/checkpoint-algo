@@ -1,0 +1,34 @@
+ALGORITHM Checkpoint_Algo
+VAR
+    count, i, j : INTEGER;
+    wordCount: INTEGER := 0;
+    charCount: INTEGER := 0;
+    ch : STRING;
+    VowelsCount : INTEGER := 0;
+BEGIN
+     read(ch);
+
+     FOR i FROM 0 TO length-1 STEP 1  DO
+        charCount++
+        
+    END_FOR
+    
+    FOR count FROM 0 TO length-1 STEP 1  DO
+        IF (ch[count]==" ") THEN
+           wordCount++;
+        END_IF
+    END_FOR
+        
+    FOR j FROM 0 TO length-1 STEP 1  DO
+    
+
+        IF  (ch[j] == 'a' || ch[j] == 'e'
+            || ch[j] == 'i' || ch[j] == 'o'
+            || ch[j] == 'u' || ch[j] == 'A'
+            || ch[j] == 'E' || ch[j] == 'I'
+            || ch[j] == 'O' || ch[j] == 'U') THEN
+            VowelsCount++; 
+        END_IF 
+    END_FOR
+        
+END
